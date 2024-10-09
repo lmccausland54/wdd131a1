@@ -9,6 +9,40 @@
 --secondary-font: Mooli, san-serif;
 }
 
+#viewer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.75);
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 20px 1fr;
+  z-index: 10;
+  justify-items: center;
+  align-items: center;
+  height: 100vh;
+  
+}
+
+.close-viewer {
+  color: white;
+  grid-row: 1/2;
+  justify-self: end;
+  background: transparent;
+  border: none;
+  
+}
+
+#modal-img {
+  height: 80%;
+  grid-row: 2/3;
+  justify-self: center;
+  width: 80%;
+
+}
+
 header, footer, #button {
   background-color: var(--primary-color);
 }
@@ -19,6 +53,11 @@ body {
 }
 
 
+
+
+.hide {
+  display: none;
+}
 
 nav a, #button {
   color: var(--text-light);
@@ -78,10 +117,10 @@ footer {
   .gallery {
     grid-template-columns: 1fr 1fr;
   }
-  nav a {
-    display: none;
-  }
+  
 }
+
+
 
 @media screen and (min-width: 1000px)
 {
@@ -93,5 +132,10 @@ footer {
     display: flex;
     justify-content: space-around;
     align-items: center;
+  } 
+  #viewer {
+    max-width: 1500px;
+    padding: 50px;
+    margin: 0 auto;
   }
 }
