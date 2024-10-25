@@ -19,8 +19,18 @@ const articles = [
     rating: '★★★★☆',
     title: 'Magnus Chase Book One: Sword of Summer',
     image: 'magnus-chase-img.jpg',
-    description: 'Rick Riordan’s Norse Mythology adventure, after his previous success with Greek, Roman, and Egyptian mythology.'
+    description: "The anticipated new novel by Rick Riordan. After Greek mythology (Percy Jackson), Greek/Roman (Heroes of Olympus), and Egyptian (Kane Chronicles), Rick decides to try his hand with Norse Mythology, and the end result is good."
+  },
+  {
+    date: 'Feb 12, 2022',
+    ageRange: '12-16',
+    genre: 'Fantasy',
+    rating: '★★★★★',
+    title: 'Belgariad Book One: Pawn of Prophecy',
+    image: 'pawn-img.jpg',
+    description: '"A fierce dispute among the Gods and the theft of a powerful Orb leaves the World divided into five kingdoms. Young Garion, with his "Aunt Pol" and an elderly man calling himself Wolf --a father and daughter granted near-immortality by one of the Gods -- set out on a complex mission.'
   }
+
   
 ];
 
