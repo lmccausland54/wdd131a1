@@ -1,7 +1,7 @@
-// Reference to the container where articles will be inserted
+
 const articlesContainer = document.querySelector('#maincontent');
 
-// Example data for the articles
+
 const articles = [
   {
     date: 'July 5, 2022',
@@ -24,7 +24,7 @@ const articles = [
   
 ];
 
-// Function to build the HTML for a single article
+
 function buildArticleHTML(article) {
   return `
     <section class="article">
@@ -43,17 +43,17 @@ function buildArticleHTML(article) {
    
 }
 
-// Function to display all articles
+
 function displayArticles() {
-  // Clear the container before adding new articles
+  
   articles.forEach(article => {
-    // Build the HTML for each article
+    
     const articleHTML = buildArticleHTML(article);
     
-    // Append the article HTML to the container
+    
     articlesContainer.innerHTML += articleHTML;
   });
 }
 
-// Call the function to display the articles
+
 displayArticles();
