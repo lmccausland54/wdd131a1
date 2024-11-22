@@ -83,43 +83,48 @@ img {
     margin-bottom: 20px;
    
 }
-
-#recipe-card {
+.recipe {
     display: flex;
     flex-direction: column;
     border: 2px solid gray;
     border-radius: 5px;
     padding: 20px;
+    margin-bottom: 20px;
 }
-#tag-list {
+
+.tag {
+    display: flex;
     gap: 10px;
-    display:flex;
-    
     list-style: none;
-    justify-content: flex-start;
-    margin-left: -40px
+    padding: 0;
+    margin: 10px 0;
+}
+
+.tag li {
+    font-size: 14px;
+    font-family: Arial, sans-serif;
+    padding: 5px 10px;
+    border: 1px solid black;
+   
 }
 
 
 
 
-#recipe-title {
+.recipe-title {
+    text-decoration: none;
     font-family: Helvetica, sans-serif;
     font-size: 2em;
     color: var(--primary-color);
 }
 
-#tag {
-    border: 2px solid black;
-    font-size: 15px;
-    font-family: Arial, sans-serif;
-    padding: 5px;
-    width: 60px;
-    height: 40px;
-    
+.rating {
+    display: block; /* Forces the rating to take up its own line */
+    margin: 10px 0; /* Adds spacing above and below */
+    font-size: 1.2em; /* Adjusts size for better readability */
 }
 
-#recipe-description {
+.recipe-description {
     display: none;
 }
 
@@ -148,7 +153,12 @@ footer a {
 @media screen and (min-width: 600px) {
     #recipe-card {
         flex-direction: row;
-        align-items: flex-start;
+        flex-wrap: wrap;
+        align-items: flex-start;  
+    }
+
+    .recipe {
+        flex-direction: row;
     }
     
     #title-logo-container {
@@ -160,22 +170,29 @@ footer a {
         height: auto;
     }
 
-    #recipe-content {
+    .recipe-content {
         flex: 1;
         display: flex;
         flex-direction: column;
         padding-left: 20px; 
+        
+        
+     
+        
        
 
     }
-    #recipe-description {
-        display: contents;
-        
-        
+    .recipe-description {
+        display: block;
+        margin: 10px 0; 
+        font-family: var(--primary-font); 
+        font-size: 1em;
+        color: var(--text-dark);
+        line-height: 1.5; 
 
     }
 
-    #recipe-title {
+    .recipe-title {
         margin-top: -10px;
     }
     .rating {

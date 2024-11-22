@@ -15,6 +15,7 @@
     <meta property="og:image" content="URL to an image">
     <meta property="og:url" content="https://lmccausland54.github.io/wdd131a1/recipes/">
     <meta name="twitter:card" content="summary_large_image">
+    <script src="main.js" type="module"></script>
 </head>
 <body>
     <header>
@@ -37,8 +38,8 @@
 
     <main>
         <div id="search-container">
-            <label id="search-bar-text"   for="search-recipes">Find a recipe!</label>
-            <input type="search" id="search-recipes" name="search-bar"/>
+            <label id="search-bar-text"   for="search-recipes" ></label>
+            <input type="search" id="search-recipes" placeholder="Find a recipe!" name="search-bar"/>
             <button aria-label="search button" id="search-button">
                 <img id="search-button-img" src="search.svg" alt="" id="button-img"/>
             </button> 
@@ -47,29 +48,8 @@
         <div id="dividing-border"></div>
 
         <div id="recipe-card">
-            <img id="recipe-img"  src="sweet-potato-waffle-md.jpg" alt="Sweet potato waffles"/>
-            
-            <div id="recipe-content">   
-                <p id="tag">waffles</p>
-
-
-           
-            
-                <h2 id="recipe-title">Sweet Potato Waffles</h2>
-
-                <span class="rating" role="img" aria-label="Rating: 4 out of 5 stars">
-                                                    
-                    <span aria-hidden="true" class="icon-star">⭐</span>
-                    <span aria-hidden="true" class="icon-star">⭐</span>
-                    <span aria-hidden="true" class="icon-star">⭐</span>
-                    <span aria-hidden="true" class="icon-star-empty">⭐</span>
-                    <span aria-hidden="true" class="icon-star-empty">☆</span>
-                </span>
-
-                <p id="recipe-description">
-                    Savory waffles made with Sweet potato with a hint of ginger.
-                </p>
-            </div> 
+          
+             
 
 
         </div>
